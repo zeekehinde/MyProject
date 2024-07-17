@@ -1,0 +1,36 @@
+.Footer-container {
+  background-color: #ffffff;
+  padding: 20px;
+  color: 000000;
+  text-align: center;
+  height: 150px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-items {
+  text-align: center;
+}
+
+.footer-link {
+  color: #106470;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0a3c48;
+}
