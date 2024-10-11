@@ -1,8 +1,23 @@
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import './Homepage.css'
+import Popup from '../Order/Popup'
+import React, { useState } from 'react';
 
 const Homepage = () => {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  const [selectedServing, setSelectedServing] = useState('');
+
+  const handleProceed = () => {
+    if (selectedServing) {
+      alert('You selected serving example', {selectedServing});
+      setPopupVisible(false); // Close the popup on proceed
+    } else {
+      alert('Please select a serving.');
+    }
+  };
+
   return (
     <>
     <Navbar/>
@@ -71,7 +86,26 @@ const Homepage = () => {
       <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
       <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
-    <button type='button' className='know'>Order</button>
+    <button type='button' className='know' onClick={() => setPopupVisible(true)} >Order</button>
+    <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
+    <h6>Select Serving</h6> 
+    <select
+          value={selectedServing}
+          onChange={(e) => setSelectedServing(e.target.value)}
+          style={{height: '30px', width: '120px',}}
+> 
+          <option value="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        {/* Proceed button */}
+        <button onClick={handleProceed} style={{ marginTop: '20px', color: 'white', background: '#106470', borderRadius: '5px', height:'30px', width: '80px' }} disabled={!selectedServing}>
+          Proceed
+        </button>
+
+    </Popup> 
   </div>
 
   <div className="container">
@@ -85,7 +119,26 @@ const Homepage = () => {
       <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
       <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
-    <button type='button' className='know'>Order</button>
+    <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
+    <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
+    <h6>Select Serving</h6> 
+    <select
+          value={selectedServing}
+          onChange={(e) => setSelectedServing(e.target.value)}
+          style={{height: '30px', width: '120px',}}
+        > 
+          <option value="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        {/* Proceed button */}
+        <button onClick={handleProceed} style={{ marginTop: '20px', color: 'white', background: '#106470', borderRadius: '5px', height:'30px', width: '80px' }} disabled={!selectedServing}>
+          Proceed
+        </button>
+
+    </Popup> 
   </div>
 
   <div className="container">
@@ -99,7 +152,26 @@ const Homepage = () => {
       <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
       <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
-    <button type='button' className='know'>Order</button>
+    <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
+    <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
+    <h6>Select Serving</h6> 
+    <select
+          value={selectedServing}
+          onChange={(e) => setSelectedServing(e.target.value)}
+          style={{height: '30px', width: '120px',}}
+        > 
+          <option value="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        {/* Proceed button */}
+        <button onClick={handleProceed} style={{ marginTop: '20px', color: 'white', background: '#106470', borderRadius: '5px', height:'30px', width: '80px' }} disabled={!selectedServing}>
+          Proceed
+        </button>
+
+    </Popup> 
   </div>
 
   <div className="container">
@@ -113,12 +185,30 @@ const Homepage = () => {
       <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
       <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
-    <button type='button' className='know'>Order</button>
+    <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
+    <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
+    <h6>Select Serving</h6> 
+    <select
+          value={selectedServing}
+          onChange={(e) => setSelectedServing(e.target.value)}
+          style={{height: '30px', width: '120px',}}
+        > 
+          <option value="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        {/* Proceed button */}
+        <button onClick={handleProceed} style={{ marginTop: '20px', color: 'white', background: '#106470', borderRadius: '5px', height:'30px', width: '80px' }} disabled={!selectedServing}>
+          Proceed
+        </button>
+
+    </Popup> 
   </div>
 </div>
 
-      <div className="section-5">
-
+    <div className="section-5">
       </div>
 
       </div>
