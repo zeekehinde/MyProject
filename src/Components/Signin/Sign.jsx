@@ -1,6 +1,8 @@
 import './Signin.css'
 import React from "react"
 import { useState, useEffect } from 'react'
+import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 
 const Sign = () => {
@@ -18,7 +20,13 @@ const Sign = () => {
   }
 
   return (
+    <>
+    <Navbar />
     <div className='sign-in-form1'>
+      <div className='text'>
+      <h3>Want to get food from your favourite restaruant?</h3>
+      <h6>Fill in the form to get started</h6>
+      </div>
       <form action="http://localhost:3600/api/auth/register" method='post'>
         <div className="form-groups">
             <input type="text" placeholder='fullname' name='fullname' required/> <br />
@@ -33,6 +41,8 @@ const Sign = () => {
         </div>
       </form>
     </div>
+    <Footer />
+    </>
   )
 }
 

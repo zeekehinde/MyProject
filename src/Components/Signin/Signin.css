@@ -1,57 +1,84 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-} */
-
+/* Container styling */
 .sign-in-form1 {
-    background-color: #1c1c1c;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-}
-
-.form-groups {
-    margin-bottom: 15px;
-}
-
-.form-groups input[type="text"],
-.form-groups input[type="email"],
-.form-groups select {
-    width: 100%;
-    padding: 10px;
-    background-color: #ffffff00;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc53;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.form-groups select {
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.462);
-}
-
-.signinbtn {
-    background-color: #106470;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  /* Text section styling */
+  .text {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .text h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  
+  .text h6 {
+    color: #555;
+    font-weight: 300;
+  }
+  
+  /* Form group styling */
+  .form-groups {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-groups input,
+  .form-groups select {
     width: 100%;
-}
-
-.signinbtn:hover {
-    background-color: #0a3c48;
-}
+    padding: 12px;
+    margin: 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-groups input::placeholder {
+    color: #999;
+  }
+  
+  .form-groups select {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Submit button styling */
+  .signinbtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #106470;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signinbtn:hover {
+    background-color: #012b31;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .sign-in-form1 {
+      padding: 15px;
+    }
+  
+    .form-groups input,
+    .form-groups select {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .signinbtn {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

@@ -46,18 +46,48 @@
 
 
   .sign-in .btn {
-    margin-right: 150px;
-    color: white;
-    background-color: #106470;
+    margin-right: 5px;
+    margin-left: 50px;
+    /* color: white;
+    background-color: #106470; */
     padding: 5px 20px;
-    display: inline-block;
+    /* display: inline-block;
+    border-radius: 5px; */
+    background-color: white;
+    border: 1px solid #0000007d;
     border-radius: 5px;
   }
 
+  .Restsign-in .bunny {
+    margin-right: 120px;
+    margin-left: 0;
+    padding: 5px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    background-color: #106470;
+  }
+
+  .sign-in .btn a {
+    color: #000;
+  }
+  
+
 .sign-in .btn:hover {
-    background-color: black;
+    background-color: #012b31;
+    color: white;
+}
+
+.Restsign-in .bunny:hover{
+  background-color: #012b31;
+  color: white;
 }
 
   /* .btn {
     text-decoration: none;
   } */
+
+a {
+  color: white;
+  text-decoration: none;
+}

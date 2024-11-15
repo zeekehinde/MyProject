@@ -24,12 +24,12 @@ const Homepage = () => {
     <div className='homepage-container'>
       <div className='section-one'>
         <div className='hero-image'>
-          <img src={process.env.PUBLIC_URL + '/images/Group.png'} height='550px' width= '550' alt="" />
+          <img src={process.env.PUBLIC_URL + '/Assets/Group.png'} height='550px' width= '550' alt="" />
         </div>
       </div>
         <div className='hero-buttons'>
             <button type='button' className='herosign-in'> <a href="/Sign"> Sign In </a> </button>
-            <button type='button' className='resturant'>Resturants</button>
+            <button type='button' className='resturant'><a href="/restaurant" className="nav-link">Resturants</a></button>
         </div>
       <div className='Section-two'>
         <div className='left'>
@@ -43,8 +43,9 @@ const Homepage = () => {
           <button type='button' className='know-more' >More about us</button>
           </div>
         </div>
+      
         <div className='right'>
-        <img src={process.env.PUBLIC_URL + '/images/African.png'} className='img1' height='400px' width= '400' alt='' />
+        <img src={process.env.PUBLIC_URL + '/Assets/African.png'} className='img1' height='400px' width= '400' alt='' />
         </div>
       </div>
       <div className='section-three'>
@@ -52,22 +53,22 @@ const Homepage = () => {
           <div className="rectangle3"></div>
           <div className="imgs">
             <div className="order">
-            <img src={process.env.PUBLIC_URL + '/images/Shoppingbasket.png'} className='img1' height='90px' width= '90' alt='' />
+            <img src={process.env.PUBLIC_URL + '/Assets/ShoppingBasket.png'} className='img1' height='90px' width= '90' alt='' />
             <h3 className='sec3-text'>Order</h3>
             </div>
             <div className="payment">
-            <img src={process.env.PUBLIC_URL + '/images/payment.png'} className='img1' height='90px' width= '90' alt='' />
+            <img src={process.env.PUBLIC_URL + '/Assets/payment.png'} className='img1' height='90px' width= '90' alt='' />
             <h3 className='sec3-text'>Payment</h3>
             </div>
             <div className="delivery">
-            <img src={process.env.PUBLIC_URL + '/images/delivery-truck.png'} className='img1' height='90px' width= '90' alt='' />
+            <img src={process.env.PUBLIC_URL + '/Assets/delivery-truck.png'} className='img1' height='90px' width= '90' alt='' />
             <h3 className='sec3-text'>Delivery</h3>
             </div>
           </div>
       </div>
 
       
-      <div className="section-four">
+      <div className="section-four" id='section-four'>
         <div className='section-header-sub'>
           <h1 className="section-header4">Restaruants</h1>
           <h3 className="side-text">search your fav</h3>
@@ -76,15 +77,15 @@ const Homepage = () => {
         <div className="rectangle4"></div>
         <div className="cards-container">
   <div className="container">
-    <img src={process.env.PUBLIC_URL + '/images/Food.jfif'} className='Images' height='90px' width='90' alt='' />
+    <img src={process.env.PUBLIC_URL + '/Assets/Food.jfif'} className='Images' height='90px' width='90' alt='' />
     <h3 className='sec3-text'>Mama's Cooking Restaurant</h3>
     <p>We've got your breakfast, lunch <br /> and dinner covered</p>
     <div className="stars">
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
     <button type='button' className='know' onClick={() => setPopupVisible(true)} >Order</button>
     <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
@@ -109,15 +110,15 @@ const Homepage = () => {
   </div>
 
   <div className="container">
-    <img src={process.env.PUBLIC_URL + '/images/Food.jfif'} className='Images' height='90px' width='90' alt='' />
+    <img src={process.env.PUBLIC_URL + '/Assets/Food.jfif'} className='Images' height='90px' width='90' alt='' />
     <h3 className='sec3-text'>Mama's Cooking Restaurant</h3>
     <p>We've got your breakfast, lunch <br /> and dinner covered</p>
     <div className="stars">
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
     <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
     <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
@@ -142,15 +143,15 @@ const Homepage = () => {
   </div>
 
   <div className="container">
-    <img src={process.env.PUBLIC_URL + '/images/Food.jfif'} className='Images' height='90px' width='90' alt='' />
+    <img src={process.env.PUBLIC_URL + '/Assets/Food.jfif'} className='Images' height='90px' width='90' alt='' />
     <h3 className='sec3-text'>Mama's Cooking Restaurant</h3>
     <p>We've got your breakfast, lunch <br /> and dinner covered</p>
     <div className="stars">
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
     <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
     <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>
@@ -175,15 +176,15 @@ const Homepage = () => {
   </div>
 
   <div className="container">
-    <img src={process.env.PUBLIC_URL + '/images/Food.jfif'} className='Images' height='90px' width='90' alt='' />
+    <img src={process.env.PUBLIC_URL + '/Assets/Food.jfif'} className='Images' height='90px' width='90' alt='' />
     <h3 className='sec3-text'>Mama's Cooking Restaurant</h3>
     <p>We've got your breakfast, lunch <br /> and dinner covered</p>
     <div className="stars">
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/11.png'} className='Images' height='10px' width='10px' alt='' />
-      <img src={process.env.PUBLIC_URL + '/images/22.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/11.png'} className='Images' height='10px' width='10px' alt='' />
+      <img src={process.env.PUBLIC_URL + '/Assets/22.png'} className='Images' height='10px' width='10px' alt='' />
     </div>
     <button type='button' className='know' onClick={() => setPopupVisible(true)}>Order</button>
     <Popup trigger={isPopupVisible} setTrigger={setPopupVisible}>

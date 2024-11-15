@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="logo">
-      <img src={process.env.PUBLIC_URL + '/images/Deliverrr.png'} height = "25px" width= "125px" alt="My logo" />
+      <img src={process.env.PUBLIC_URL + '/Assets/Deliverrr.png'} height = "25px" width= "125px" alt="My logo" />
       </div>
       <div className="navbar">
         <ul className='navbar-nav'>
@@ -12,7 +12,11 @@ const Navbar = () => {
           <a href="/" className="nav-link">Home</a>
           </li>
           <li className='navbar-items'>
-          <a href="/restaurant" className="nav-link">Resturants</a>
+
+          <a href="/Restaurant"  className="nav-link">
+             Restaruants
+          </a>
+
           </li>
           <li className='navbar-items'>
           <a href="/about" className="nav-link">About Us</a>
@@ -24,6 +28,9 @@ const Navbar = () => {
       </div>
       <div className='sign-in'>
       <button type='button' className='btn' ><a href="/Sign">Sign In</a> </button>
+      </div>
+      <div className='Restsign-in'>
+      <button type='button' className='bunny' ><a href="/RestOwner">Register as restaurant</a> </button>
       </div>
     </div>
   )
