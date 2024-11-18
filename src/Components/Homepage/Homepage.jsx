@@ -31,7 +31,7 @@ const Homepage = () => {
             <button type='button' className='herosign-in'> <a href="/Sign"> Sign In </a> </button>
             <button type='button' className='resturant'><a href="/restaurant" className="nav-link">Resturants</a></button>
         </div>
-      <div className='Section-two'>
+      <div className='Section-two' id='Section-two'>
         <div className='left'>
           <h1 className='section-header'>About Us</h1>
           <div className="rectangle"></div>
